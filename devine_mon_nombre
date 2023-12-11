@@ -1,0 +1,23 @@
+
+
+fn read_int_from_stdin() → Option<u32
+fn get_ordering(secret_number: u32, input: u32) → Ordering
+fn display_result(comparison: Ordering)
+fn has_found(comparison: Ordering) → bool
+
+int main(){
+loop {
+    let input = read_int_from_stdin();
+
+    if let Some(input) = input { // if_let
+        let comparison = get_ordering(secret_number, input);
+        display_result(comparison);
+
+        if has_found(compararison) {
+            break;
+        }
+    } else {
+        println!("Saisie incorrecte");
+    }
+}
+}
